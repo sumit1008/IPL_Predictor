@@ -2,8 +2,9 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-# Load model pipeline
-pipe = pickle.load(open('./pipe.pkl', 'rb'))
+import os
+pipe = pickle.load(open(os.path.join(os.path.dirname(__file__), './pipe.pkl'), 'rb'))
+
 
 # Team and city options
 teams = ['Chennai Super Kings', 'Delhi Capitals', 'Gujarat Titans',
