@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 
 # Load model pipeline
-pipe = pickle.load(open('./pipe.pkl', 'rb'))
+pipe = pickle.load(open('/pipe.pkl', 'rb'))
 
 # Team and city options
 teams = ['Chennai Super Kings', 'Delhi Capitals', 'Gujarat Titans',
