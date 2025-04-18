@@ -1,13 +1,9 @@
 import streamlit as st
 import pickle
 import pandas as pd
-import os
 
-if not os.path.exists('pipe.pkl'):
-    st.error("Model file 'pipe.pkl' is not found!")
-else:
-    pipe = pickle.load(open('./pipe.pkl', 'rb'))
-
+# Load model pipeline
+pipe = pickle.load(open('./pipe.pkl', 'rb'))
 
 # Team and city options
 teams = ['Chennai Super Kings', 'Delhi Capitals', 'Gujarat Titans',
